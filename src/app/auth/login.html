@@ -1,0 +1,10 @@
+<form [formGroup]="form">
+    <p style="color:red">{{error}}</p>
+     <input type="email" formControlName="email" placeholder="Enter your email"/>
+
+     <input type="password"formControlName="password" placeholder="Enter your password"/>
+
+     <input formControlName="remember" type="checkbox"/>
+
+     <button (click)="submit()"> Submit</button>
+</form>
